@@ -18,7 +18,7 @@
     <include file="$(find visualization_tools)/launch/visualization_tools.launch" >
       <arg name="world_name" value="$(arg world_name)"/>
     </include>
-
+    也就是rviz中看到的彩色点云
 )
 ## 开源1（见文件夹23对抗赛场地）
 - 对2023RMUS地图solidworks文件进行开源，该项工作由湖北工业大学力创RM战队机械组**陈思强、侯宇飞**共同完成。(solidworks为2022sp5)
