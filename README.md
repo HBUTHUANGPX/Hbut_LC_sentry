@@ -23,9 +23,13 @@
 1. 下载本开源文件，尝试编译运行rmus_map_gazebo/launch/gazebo_show.launch。
 2. 将本开源文件的rmus_map_gazebo/world/2023_v_4_1.world复制到修改官方开源文件夹${workspace}/src/vechicle_simulator/world下
 3. 修改livox_rm.launch文件中四个参数
+
     name="world_name" default="2023_v_4_1"
+    
     name="vehicleX" default="7.5"
+    
     name="vehicleY" default="4"
+    
     name="terrainZ" default="0.1"
     
 (Tips
