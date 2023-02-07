@@ -1,5 +1,25 @@
 # Hbut_LC_sentry
 湖北工业大学力创RM关于哨兵的工作开源
+- 2月7日新增：
+
+对于官方开源的仿真器，可以使用本开源的地图（rmus_map_gazebo/world/2023_v_4_1.world）,使用方法为：
+
+1. 下载本开源文件，尝试编译运行rmus_map_gazebo/launch/gazebo_show.launch。
+2. 将本开源文件的rmus_map_gazebo/world/2023_v_4_1.world复制到修改官方开源文件夹${workspace}/src/vechicle_simulator/world下
+3. 修改livox_rm.launch文件中四个参数
+    name="world_name" default="2023_v_4_1"
+    name="vehicleX" default="7.5"
+    name="vehicleY" default="4"
+    name="terrainZ" default="0.1"
+    
+(Tips
+  1. 官方文件livox_rm.launch中包含了实地建图得来的点云downsampled_rm_pt.pcd文件:
+  
+    <include file="$(find visualization_tools)/launch/visualization_tools.launch" >
+      <arg name="world_name" value="$(arg world_name)"/>
+    </include>
+
+)
 ## 开源1（见文件夹23对抗赛场地）
 - 对2023RMUS地图solidworks文件进行开源，该项工作由湖北工业大学力创RM战队机械组**陈思强、侯宇飞**共同完成。(solidworks为2022sp5)
 - 该项工作趋于完善，目标主要是为了在仿真中实现Lidar-SLAM和Lidar定位导航
